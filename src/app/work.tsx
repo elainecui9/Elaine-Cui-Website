@@ -47,25 +47,25 @@ function Work() {
     },
   ];
 
-  const observerRef = useRef(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
-          observerRef.current.unobserve(entry.target); // Unobserve the element after it has faded in
+          observerRef.current?.unobserve(entry.target); // Unobserve the element after it has faded in
         }
       });
     });
 
     const elements = document.querySelectorAll('.fade-element');
     elements.forEach(element => {
-      observerRef.current.observe(element);
+      observerRef.current?.observe(element);
     });
 
     return () => {
-      observerRef.current.disconnect();
+      observerRef.current?.disconnect();
     };
   }, []);
 
