@@ -4,7 +4,7 @@ import ReactCardFlip from "react-card-flip";
 import Image from 'next/image';
 
 interface AppProps {
-    imageURL: string;
+    imageURL: any;
     text: string;
 }
 
