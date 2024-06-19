@@ -33,7 +33,7 @@ function About() {
                     <Image src={Illinois} alt="Illinois Logo" height={150} width={150} className="mx-2"/>
                 </div>
                 <div>
-                    <a href="/assets/files/ElaineCuiResume.pdf" download="ElaineCuiResume.pdf" className="resume-button">
+                    <a href="/assets/files/ElaineCuiResume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
                         My Resume
                     </a>
                 </div>

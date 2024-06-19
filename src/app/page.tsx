@@ -10,10 +10,15 @@ import Projects from "./projects";
 import Work from "./work";
 import Contact from "./contact";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <Head>
+        <title>Elaine's Website</title>
+        <link rel="icon" href="/Northwestern-Wildcats-Logo.ico" />
+      </Head>
       <div className="flex flex-col font-serif min-h-screen">
         <Header></Header>
         <div className="relative h-screen w-full">
@@ -49,6 +54,6 @@ export default function Home() {
         </section>
         <Footer></Footer>
       </div>
-    </main>
+    </>
   )
 }
