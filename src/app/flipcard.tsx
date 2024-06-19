@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import Image from 'next/image';
 
-function App(props) {
+interface AppProps {
+    imageURL: string;
+    text: string;
+}
+
+function App({ imageURL, text }: AppProps) {
     const [flip, setFlip] = useState(false);
     return (
         <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
@@ -24,13 +29,14 @@ function App(props) {
             onMouseEnter={() => setFlip(true)}  
             >
                 <Image 
-                    src={props.imageURL} 
+                    src={imageURL} 
                     alt="Skill Logo" 
                     width={100} 
                     height={50} 
-                    layout="responsive"  // Ensuring the image is responsive within the given width and height
-                    objectFit="cover"    // Cover to ensure the image covers the designated area completely
-                />            </div>
+                    layout="responsive"  
+                    objectFit="cover"   
+                />            
+            </div>
             <div style={{
                 width: '125px',
                 height: '125px',
@@ -44,13 +50,13 @@ function App(props) {
                 justifyContent: 'center', 
                 padding: '20px'
             }}
-            onMouseLeave={() => setFlip(false)}  // Flip back when mouse leaves
+            onMouseLeave={() => setFlip(false)}  
             >
-                <h1>{props.text}</h1>
-
+                <h1>{text}</h1>
             </div>
         </ReactCardFlip>
     );
 }
 
 export default App;
+

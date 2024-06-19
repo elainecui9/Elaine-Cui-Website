@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image'
 import FlipCard from "./flipcard"
 import Java from "./Assets/Java.png"
 import Python from "./Assets/Python.png"
