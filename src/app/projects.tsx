@@ -41,7 +41,7 @@ const projects = [
     url: "https://github.com/elainecui9/Scholarly---WildHacks-2024",
     alt: "Scholarly Project",
     title: "Scholarly | Northwestern WildHacks Winner – Best Use of AI in Education",
-    tech: "Python, MongoDB, FastAPI, Claude-3, React, TypeScript, Tailwind",
+    tech: "Python, MongoDB, FastAPI, Claude-3, React, TypeScript, Tailwind, Next.js",
     description: "AI educational platform to simplify 10,000,000+ research and academia articles."
   },
   {
@@ -54,10 +54,10 @@ const projects = [
   },
   {
     image: WIND,
-    url: "",
+    url: "https://github.com/elainecui9/OurConnection",
     alt: "Wind Project",
     title: "OurConnection | DSGN 208 Design, Thinking, & Doing",
-    tech: "Python, React",
+    tech: "Python, React, MongoDB, JavaScript, Next.js, Tailwind",
     description: "Platform for incarcerated women to share their stories and spread awareness, prototyped with Women Initiating New Directions."
   },
   {
