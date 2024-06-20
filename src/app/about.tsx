@@ -1,9 +1,9 @@
-"use client"
-import Image from 'next/image'
+"use client";
+import Image from 'next/image';
 import Lottie from 'react-lottie';
 import animationData from './Assets/Paper.json';
-import Minnesota from "./Assets/Minnesota.png"
-import Illinois from "./Assets/Illinois.png"
+import Minnesota from "./Assets/Minnesota.png";
+import Illinois from "./Assets/Illinois.png";
 
 function About() {
     const defaultOptions = {
@@ -33,7 +33,7 @@ function About() {
                     <Image src={Illinois} alt="Illinois Logo" height={150} width={150} className="mx-2"/>
                 </div>
                 <div>
-                    <a href="/assets/files/ElaineCuiResume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+                    <a href="/assets/ElaineCuiResume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
                         My Resume
                     </a>
                 </div>
