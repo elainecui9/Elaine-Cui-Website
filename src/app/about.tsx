@@ -21,7 +21,7 @@ function About() {
                 <div className="text-center">
                     <h1 className='font-bold text-2xl mb-4'>Let Me Introduce Myself...</h1>
                     <p className="text-lg" style={{ maxWidth: "1000px" }}>
-                        Hi, my name is Elaine Cui. I currently study Computer Science at Northwestern University but am originally from Plymouth, Minnesota.
+                        Hi, my name is Elaine Cui. I currently study Computer Science and Mathematics at Northwestern University but am originally from Plymouth, Minnesota.
                         I am seeking a role in Software Engineering and am primarily interested in graphics, AI/ML, and web development. However, I am 
                         constantly willing to learn more. Outside of just coding, I love to dance, explore nature, and creating artwork.
                         It's very nice to meet you, and I hope you enjoy my website!
