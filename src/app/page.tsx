@@ -15,10 +15,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Elaine's Website</title>
-        <link rel="icon" href="/Northwestern-Wildcats-Logo.ico" />
-      </Head>
       <div className="flex flex-col font-serif min-h-screen">
         <Header></Header>
         <div className="relative h-screen w-full">
