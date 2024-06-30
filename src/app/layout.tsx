@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: 'Elaine Cui',
   description: 'Portfolio',
   icons: {
-    icon: "/favicon.ico",
+    icon: "/assets/favicon.ico",
   },
-}
+};
 
 export default function RootLayout({
   children,
