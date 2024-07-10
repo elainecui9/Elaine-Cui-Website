@@ -28,7 +28,7 @@ function Contact() {
                         <div className='flex flex-col items-center'>
                             <h1 className='font-semibold'>Email Me</h1>
                             <MdOutlineMarkEmailRead size={50} className="my-2" />
-                            <h1 className='text-lg'>elainecui@northwestern.edu</h1>
+                            <h1 className='text-lg'>elainecui@u.northwestern.edu</h1>
                         </div>
                         <div className='flex flex-col items-center'>
                             <h1 className='font-semibold'>Connect on LinkedIn</h1>

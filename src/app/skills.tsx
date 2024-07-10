@@ -17,6 +17,11 @@ import React from "./Assets/React.png"
 import Tailwind from "./Assets/Tailwind.png"
 import Lottie from 'react-lottie';
 import animationData from './Assets/Growingleaves.json';
+import Vue from "./Assets/Vue.png"
+import Micronaut from "./Assets/Micronaut.png"
+import Maven from "./Assets/Maven.png"
+import PostgreSQL from "./Assets/PostgreSQL.png"
+import SpringBoot from "./Assets/SpringBoot.png"
 
 function Skills() {
     const defaultOptions = {
@@ -46,11 +51,16 @@ function Skills() {
                     <FlipCard imageURL = {TypeScript} text="TypeScript"></FlipCard>
                     <FlipCard imageURL = {JavaScript} text="JavaScript"></FlipCard>
                     <FlipCard imageURL = {React} text="React"></FlipCard>
+                    <FlipCard imageURL = {Vue} text="Vue.js"></FlipCard>
                     <FlipCard imageURL = {AWS} text="AWS"></FlipCard>
+                    <FlipCard imageURL = {SpringBoot} text="Spring Boot"></FlipCard>
                     <FlipCard imageURL = {FastAPI} text="FastAPI"></FlipCard>
                     <FlipCard imageURL = {MongoDB} text="MongoDB"></FlipCard>
                     <FlipCard imageURL = {MySQL} text="MySQL"></FlipCard>
+                    <FlipCard imageURL = {PostgreSQL} text="PostgreSQL"></FlipCard>
                     <FlipCard imageURL = {Nextjs} text="Next.js"></FlipCard>
+                    <FlipCard imageURL = {Micronaut} text="Micronaut"></FlipCard>
+                    <FlipCard imageURL = {Maven} text="Maven"></FlipCard>
                     <FlipCard imageURL = {Tailwind} text="Tailwind"></FlipCard>
                     <FlipCard imageURL = {CSS} text="CSS"></FlipCard>
                     <FlipCard imageURL = {HTML} text="HTML"></FlipCard>

@@ -11,10 +11,10 @@ import PacSun from "./Assets/PacSun.png";
 function Work() {
   const experiences = [
     {
-      title: "Software Developer Intern",
+      title: "Software Engineer Intern",
       company: "Minnesota Government IT Services | Health Department",
       duration: "June 2024 – Present",
-      description: "Redesigned immunization SMS system with AWS Pinpoint and Python for 1,000+ campaigns and 50,000+ Minnesotans to keep citizens up to date with health care information and updates.",
+      description: "Automated immunization SMS messaging system with AWS Pinpoint, Python, and JSON for 200+ campaigns and 100,000+ Minnesotans to keep citizens up to date with recurring healthcare information and updates. Constructed web application utilizing Vue.js, JPA, Spring Boot, Maven, Micronaut, and PostgreSQL to collect language preferences for 10,000+ pre-literate adults to customize AWS Pinpoint for the Infectious Disease Division’s texting campaigns.",
       picture: MNIT
     },
     {
@@ -25,10 +25,10 @@ function Work() {
       picture: Garage
     },
     {
-      title: "Software Developer Intern",
+      title: "Software Engineer Intern",
       company: "Caraburo IT Consulting",
       duration: "May 2023 – September 2023",
-      description: "Facilitated the creation of a full stack web application using React to search affordable daycare centers in 20+ states by developing API requests to retrieve data from backend database.",
+      description: "Facilitated creation of full-stack web application using React and Python to search for affordable daycare centers in 20+ states by developing API requests to retrieve data from backend MySQL databases, utilizing Google Maps and Places API. Created messaging system between 100+ parents and daycare centers with WebSocket to allow for texting and image sharing.",
       picture: Caraburo
     },
     {
