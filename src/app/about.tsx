@@ -17,8 +17,8 @@ function About() {
 
     return (
         <section>
-            <div className="bg-beige h-screen text-darksage flex justify-center items-center flex-col">
-                <div className="text-center">
+            <div className="bg-beige h-fit text-darksage flex justify-center items-center flex-col relative">
+                <div className="text-center p-8 pt-32">
                     <h1 className='font-bold text-2xl mb-4'>Let Me Introduce Myself...</h1>
                     <p className="text-lg" style={{ maxWidth: "1000px" }}>
                         Hi, my name is Elaine Cui. I currently study Computer Science and Mathematics at Northwestern University but am originally from Plymouth, Minnesota.
@@ -32,9 +32,14 @@ function About() {
                     <Lottie options={defaultOptions} height={300} width={300}/>
                     <Image src={Illinois} alt="Illinois Logo" height={150} width={150} className="mx-2"/>
                 </div>
-                <div>
+                <div className="pb-16">
                     <a href="/assets/ElaineCuiResume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
                         My Resume
+                    </a>
+                </div>
+                <div className="absolute bottom-4 right-4">
+                    <a href="https://screeching-longship-649.notion.site/36360ae9edec47b7a51b5c41489e259b?v=8d695030dd244a0aa93e46bc491e3669" target="_blank" rel="noopener noreferrer" className="creative-button">
+                        --{'>'} Look at my creative side...
                     </a>
                 </div>
             </div>
