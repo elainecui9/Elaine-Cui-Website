@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
-import Image from "next/image";
+import Image from "next/legacy/image";
 import MNIT from "./Assets/MNIT.png";
 import Garage from "./Assets/TheGarage.png";
 import Caraburo from "./Assets/Caraburo.png";

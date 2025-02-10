@@ -1,5 +1,5 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Lottie from 'react-lottie';
 import animationData from './Assets/Paper.json';
 import Minnesota from "./Assets/Minnesota.png";

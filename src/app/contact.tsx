@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import ContactMe from "./Assets/ContactMe.png";
 import { CiLinkedin } from "react-icons/ci";

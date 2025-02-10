@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Scholarly from "./Assets/Scholarly.png"
 import TheGarage from "./Assets/TheGarage.png"
 import Converter from "./Assets/Converter.webp"

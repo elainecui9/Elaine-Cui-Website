@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 interface AppProps {
     imageURL: any;

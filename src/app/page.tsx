@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Header from "./header";
 import About from "./about";
 import Skills from "./skills";
