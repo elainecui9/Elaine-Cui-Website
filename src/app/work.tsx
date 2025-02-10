@@ -7,16 +7,10 @@ import Garage from "./Assets/TheGarage.png";
 import Caraburo from "./Assets/Caraburo.png";
 import LifeTime from "./Assets/LifeTime.jpg";
 import PacSun from "./Assets/PacSun.png";
+import Northwestern from "./Assets/Northwestern.png";
 
 function Work() {
   const experiences = [
-    {
-      title: "Software Engineer Intern",
-      company: "Minnesota Government IT Services | Health Department",
-      duration: "June 2024 – Present",
-      description: "Automated immunization SMS messaging system with AWS Pinpoint, Python, and JSON for 200+ campaigns and 100,000+ Minnesotans to keep citizens up to date with recurring healthcare information and updates. Constructed web application utilizing Vue.js, JPA, Spring Boot, Maven, Micronaut, and PostgreSQL to collect language preferences for 10,000+ pre-literate adults to customize AWS Pinpoint for the Infectious Disease Division’s texting campaigns.",
-      picture: MNIT
-    },
     {
       title: "Full Stack Software Engineer",
       company: "The Garage Northwestern",
@@ -24,6 +18,21 @@ function Work() {
       description: "Structured landing page and dynamic hub/website leveraging React, Tailwind, and AWS for centralizing entrepreneurship workshops, alumni databases, and idea creation for 1,500+ startups and 1,000+ students at Northwestern and San Francisco.",
       picture: Garage
     },
+    {
+      title: "Teaching Assistant & Student-Athletes Tutor",
+      company: "Northwestern University",
+      duration: "September 2024 – Present",
+      description: "Assisted 50+ students in Introduction to Graphical Programming (CS 351) by conducting 20+ office hours, collaborating with the professor to develop exam questions, and providing support through assignment, project, and exam assessments. Tailored study plans for 10+ student-athletes through individualized tutoring sessions in Linear Algebra (MATH 240), Single Variable Calculus (MATH 218), Computer Programming (CIS 110), and Fundamentals of Programming (CS 111)",
+      picture: Northwestern
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "Minnesota Government IT Services | Health Department",
+      duration: "June 2024 – September 2024",
+      description: "Automated immunization SMS messaging system with AWS Pinpoint, Python, and JSON for 200+ campaigns and 100,000+ Minnesotans to keep citizens up to date with recurring healthcare information and updates. Constructed web application utilizing Vue.js, JPA, Spring Boot, Maven, Micronaut, and PostgreSQL to collect language preferences for 10,000+ pre-literate adults to customize AWS Pinpoint for the Infectious Disease Division’s texting campaigns.",
+      picture: MNIT
+    },
+    
     {
       title: "Software Engineer Intern",
       company: "Caraburo IT Consulting",

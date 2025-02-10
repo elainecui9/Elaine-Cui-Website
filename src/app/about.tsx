@@ -22,7 +22,7 @@ function About() {
                     <h1 className='font-bold text-2xl mb-4'>Let Me Introduce Myself...</h1>
                     <p className="text-lg" style={{ maxWidth: "1000px" }}>
                         Hi, my name is Elaine Cui. I currently study Computer Science and Mathematics at Northwestern University but am originally from Plymouth, Minnesota.
-                        I am seeking a role in Software Engineering and am primarily interested in graphics, AI/ML, and web development. However, I am 
+                        I am seeking a role in Software Engineering and am primarily interested in education, graphics, AI/ML, and systems. However, I am 
                         constantly willing to learn more. Outside of just coding, I love to dance, explore nature, and creating artwork.
                         It's very nice to meet you, and I hope you enjoy my website!
                     </p>
@@ -37,11 +37,11 @@ function About() {
                         My Resume
                     </a>
                 </div>
-                <div className="absolute bottom-4 right-4">
+                {/* <div className="absolute bottom-4 right-4">
                     <a href="https://screeching-longship-649.notion.site/36360ae9edec47b7a51b5c41489e259b?v=8d695030dd244a0aa93e46bc491e3669" target="_blank" rel="noopener noreferrer" className="creative-button">
                         --{'>'} Look at my creative side...
                     </a>
-                </div>
+                </div> */}
             </div>
         </section>
     );
