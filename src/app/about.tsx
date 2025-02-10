@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Lottie from 'react-lottie';
 import animationData from './Assets/Paper.json';
 import Minnesota from "./Assets/Minnesota.png";
@@ -16,7 +16,7 @@ function About() {
     };
 
     return (
-        <section>
+        (<section>
             <div className="bg-beige h-fit text-darksage flex justify-center items-center flex-col relative">
                 <div className="text-center p-8 pt-32">
                     <h1 className='font-bold text-2xl mb-4'>Let Me Introduce Myself...</h1>
@@ -28,9 +28,27 @@ function About() {
                     </p>
                 </div>
                 <div className="flex items-center mt-8">
-                    <Image src={Minnesota} alt="Minnesota Logo" height={150} width={150} className="mx-2"/>
+                    <Image
+                        src={Minnesota}
+                        alt="Minnesota Logo"
+                        height={150}
+                        width={150}
+                        className="mx-2"
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                     <Lottie options={defaultOptions} height={300} width={300}/>
-                    <Image src={Illinois} alt="Illinois Logo" height={150} width={150} className="mx-2"/>
+                    <Image
+                        src={Illinois}
+                        alt="Illinois Logo"
+                        height={150}
+                        width={150}
+                        className="mx-2"
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                 </div>
                 <div className="pb-16">
                     <a href="/assets/ElaineCuiResume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
@@ -43,7 +61,7 @@ function About() {
                     </a>
                 </div> */}
             </div>
-        </section>
+        </section>)
     );
 }
 

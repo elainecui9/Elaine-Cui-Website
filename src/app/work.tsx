@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import MNIT from "./Assets/MNIT.png";
 import Garage from "./Assets/TheGarage.png";
 import Caraburo from "./Assets/Caraburo.png";
@@ -79,7 +79,7 @@ function Work() {
   }, []);
 
   return (
-    <section>
+    (<section>
       <div className="bg-beige h-max text-darksage flex justify-center items-center flex-col py-16">
         <div className="text-center">
           <div className='font-bold text-4xl m-4 text-center text-darksage py-8 mt-16 bg-white px-32 rounded-md border-dotted border-2 border-darksage mb-16'>
@@ -104,14 +104,21 @@ function Work() {
               <div className="order-1 w-5/12"></div>
               {experience.picture && (
                 <div className="w-24 h-24 absolute transform -translate-y-1/2 left-1/2 -ml-12 overflow-hidden rounded-full border-4 border-darksage flex items-center justify-center bg-white">
-                  <Image src={experience.picture} alt="Company Logo" layout="fill" objectFit="cover" />
+                  <Image
+                    src={experience.picture}
+                    alt="Company Logo"
+                    fill
+                    sizes="100vw"
+                    style={{
+                      objectFit: "cover"
+                    }} />
                 </div>
               )}
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </section>)
   );
 }
 

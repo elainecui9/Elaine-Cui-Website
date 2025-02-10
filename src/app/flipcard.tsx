@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface AppProps {
     imageURL: any;
@@ -11,7 +11,7 @@ interface AppProps {
 function App({ imageURL, text }: AppProps) {
     const [flip, setFlip] = useState(false);
     return (
-        <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
+        (<ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <div style={{
                 width: '125px',
                 height: '125px',
@@ -28,14 +28,17 @@ function App({ imageURL, text }: AppProps) {
             }}
             onMouseEnter={() => setFlip(true)}  
             >
-                <Image 
-                    src={imageURL} 
-                    alt="Skill Logo" 
-                    width={100} 
-                    height={50} 
-                    layout="responsive"  
-                    objectFit="cover"   
-                />            
+                <Image
+                    src={imageURL}
+                    alt="Skill Logo"
+                    width={100}
+                    height={50}
+                    sizes="100vw"
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "cover"
+                    }} />            
             </div>
             <div style={{
                 width: '125px',
@@ -54,7 +57,7 @@ function App({ imageURL, text }: AppProps) {
             >
                 <h1>{text}</h1>
             </div>
-        </ReactCardFlip>
+        </ReactCardFlip>)
     );
 }
 

@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import ContactMe from "./Assets/ContactMe.png";
 import { CiLinkedin } from "react-icons/ci";
@@ -10,16 +10,18 @@ import { FaGithub } from "react-icons/fa";
 
 function Contact() {
     return (
-        <section id="contact">
+        (<section id="contact">
             <div className="relative h-screen w-full bg-beige text-darksage flex justify-center items-center flex-col">
                 <Image
                     src={ContactMe}
                     alt="Front Image"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
                     className="z-10"
-                />
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                    }} />
                 <div className="absolute inset-0 m-16 bg-beige z-20"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-30">
                     <h1 className='text-sage text-2xl mb-2'>Contact Me</h1>
@@ -53,7 +55,7 @@ function Contact() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </section>)
     );
 }
 
