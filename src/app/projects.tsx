@@ -4,7 +4,10 @@ import Image from "next/image";
 import Scholarly from "./Assets/Scholarly.png"
 import TheGarage from "./Assets/TheGarage.png"
 import Converter from "./Assets/Converter.webp"
+import DotByDot from "./Assets/DotByDot.png"
 import WIND from "./Assets/WIND.png"
+import CareLink from "./Assets/CareLink.png"
+import C from "./Assets/C.png"
 
 const Projects = () => {
   return (
@@ -14,28 +17,37 @@ const Projects = () => {
       </div>
       <div className='flex flex-wrap justify-center mb-32'>
         {projects.map((project, index) => (
-          <div key={index} className='bg-white border-l-2 border-darksage m-8 p-4 rounded-md group relative transition-transform transform hover:-translate-y-2 hover:shadow-lg' style={{ width: '300px', height: '500px' }}>
-            <a href={project.url} target="_blank" rel="noopener noreferrer" >
-                <div className='relative w-full h-1/2 mb-4'>
-                  <Image
-                    src={project.image}
-                    alt={project.alt}
-                    className='group-hover:opacity-50'
-                    fill
-                    sizes="100vw"
-                    style={{
-                      objectFit: "contain"
-                    }} />
-                </div>
-                <div className='absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-md'>
-                  <div className='flex items-center justify-center h-full'>
-                    <p className='text-white text-lg'>See Project</p>
-                  </div>
-                </div>
-                <h3 className='font-bold text-lg text-darksage'>{project.title}</h3>
-                <h4 className='italic text-sm'>{project.tech}</h4>
-                <p className='mt-2'>{project.description}</p>
-            </a>
+          <div
+            key={index}
+            className='bg-white border-l-2 border-darksage m-8 p-4 rounded-md group relative transition-transform transform hover:-translate-y-2 hover:shadow-lg'
+            style={{ width: '300px', height: '500px' }}
+          >
+            <div className='relative w-full h-1/2 mb-4'>
+              <Image
+                src={project.image}
+                alt={project.alt}
+                className='group-hover:opacity-50'
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "contain"
+                }}
+              />
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-md flex items-center justify-center'
+                  style={{ textDecoration: "none" }}
+                >
+                  <p className='text-white text-lg'>See Project</p>
+                </a>
+              )}
+            </div>
+            <h3 className='font-bold text-lg text-darksage'>{project.title}</h3>
+            <h4 className='italic text-sm'>{project.tech}</h4>
+            <p className='mt-2'>{project.description}</p>
           </div>
         ))}
       </div>
@@ -44,6 +56,22 @@ const Projects = () => {
 };
 
 const projects = [
+      {
+    image: CareLink,
+    url: "https://github.com/elainecui9/CareLink",
+    alt: "CareLink Project",
+    title: "CareLink",
+    tech: "Python, React, Next.js, TypeScript, AWS, Tailwind",
+    description: "Application to connect uninsured and underinsured individuals with local free clinics."
+  },
+    {
+    image: DotByDot,
+    url: "https://github.com/heochristopher/Wildhacks-2025",
+    alt: "DotByDot Project",
+    title: "DotByDot",
+    tech: "Python, Gemini AI, React, Next.js, DynamoDB, TypeScript, FastAPI, Tailwind, Custom Hardware",
+    description: "AI braille learning platform with custom LCD keyboard prototype and multiple language support."
+  },
   {
     image: Scholarly,
     url: "https://github.com/elainecui9/Scholarly---WildHacks-2024",
@@ -59,6 +87,13 @@ const projects = [
     title: "The Garage Launchpad",
     tech: "Python, React, AWS, Next.js, TypeScript, Tailwind",
     description: "Alumni directory of 1,500+ alumni and startup students."
+  },
+  {
+    image: C,
+    alt: "Database System",
+    title: "Database System",
+    tech: "C",
+    description: "Disk-backed buffer pool, B+ tree index, and SQL query executor for mini relational database system, with support for multi-threaded access, LRU-K eviction, and Volcano-style query plans"
   },
   {
     image: WIND,

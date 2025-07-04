@@ -22,6 +22,8 @@ import Micronaut from "./Assets/Micronaut.png"
 import Maven from "./Assets/Maven.png"
 import PostgreSQL from "./Assets/PostgreSQL.png"
 import SpringBoot from "./Assets/SpringBoot.png"
+import Redux from "./Assets/Redux.png"
+import Graphite from "./Assets/Graphite.png"
 
 function Skills() {
     const defaultOptions = {
@@ -59,6 +61,8 @@ function Skills() {
                     <FlipCard imageURL = {MySQL} text="MySQL"></FlipCard>
                     <FlipCard imageURL = {PostgreSQL} text="PostgreSQL"></FlipCard>
                     <FlipCard imageURL = {Nextjs} text="Next.js"></FlipCard>
+                    <FlipCard imageURL = {Redux} text="Redux"></FlipCard>
+                    <FlipCard imageURL = {Graphite} text="Graphite"></FlipCard>
                     <FlipCard imageURL = {Micronaut} text="Micronaut"></FlipCard>
                     <FlipCard imageURL = {Maven} text="Maven"></FlipCard>
                     <FlipCard imageURL = {Tailwind} text="Tailwind"></FlipCard>
